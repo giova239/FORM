@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.scss" />
+</head>
+
+<body class="p-2">
+    <header class="text-bg-light p-3 pt-5">
+        <h1 class="fs-2 fw-normal">Contattaci</h1>
+    </header>
+
+    <main class="container-md px-3">
+        <hr class="my-4" />
+        <h2 class="fw-normal fs-3 mb-3">Servizi per i clienti</h2>
+
+        <p class="text-body-secondary pb-3">
+            Risponderemo alle e-mail entro 24 ore. da lunedi a venerdi, esclusi
+            giorni festivi. Puoi contattarci al nostro numero verde +39 800 694 222.
+        </p>
+
+        <form class="pt-5" method="POST" id="form">
+            <div class="row">
+                <div class="col-md-6 col-foo-3 mb-4">
+                    <label for="name" class="form-label">Nome *</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label for="lastname" class="form-label">Cognome *</label>
+                    <input type="text" name="lastName" id="lastname" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" name="email" id="email" class="form-control" />
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <label for="phone" class="form-label">Telefono *</label>
+                    <input type="tel" name="phone" id="phone" class="form-control" />
+                </div>
+
+                <div class="col-12 mb-4">
+                    <label for="message" class="form-label">Messaggio *</label>
+                    <textarea id="message" name="message" class="form-control" rows="8"></textarea>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <input id="send" type="submit" value="Invia" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+// ABSTRACT
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+$font-size-base: 14px;
+
+$custom-colors: (
+    primary: $black,
+);
+
+$additional-breakpoints: (
+    xxxl: 1600px,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $additional-breakpoints);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    xxxl: 1000px,
+);
+
+$border-radius: 0;
+$border-color: $gray-400;
+$btn-padding-y: $spacer;
+$btn-padding-x: $spacer * 4;
+
+// CUSTOM VARS
+@import 'node_modules/bootstrap/scss/variables-dark';
+@import 'node_modules/bootstrap/scss/maps';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'node_modules/bootstrap/scss/utilities';
+
+// COMPONENTS
+@import 'node_modules/bootstrap/scss/root';
+@import 'node_modules/bootstrap/scss/reboot';
+@import 'node_modules/bootstrap/scss/type';
+@import 'node_modules/bootstrap/scss/images';
+@import 'node_modules/bootstrap/scss/containers';
+@import 'node_modules/bootstrap/scss/grid';
+@import 'node_modules/bootstrap/scss/forms';
+@import 'node_modules/bootstrap/scss/buttons';
+
+// Helpers
+@import 'node_modules/bootstrap/scss/helpers';
+@import 'node_modules/bootstrap/scss/utilities/api';
